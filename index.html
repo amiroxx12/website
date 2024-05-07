@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Amr Ouafi</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Amr Ouafi</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()" >
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about"  onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience"  onclick="toggleMenu()">Parcours</a></li>
+            <li><a href="#projects"  onclick="toggleMenu()">Compétences</a></li>
+            <li><a href="#contact"  onclick="toggleMenu()">Contact</a></li>
+        </div>
+        </div>
+        
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile.png" alt="Amr Ouafi Profile Pic"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Boniour, je suis</p>
+            <h1 class="title">Amr Ouafi</h1>
+            <p class="section__text__p2">Étudiant en cybersécurité</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2"onclick="window.open('./assets/CV-cybersécu.pdf')">Download CV
+                </button>
+                <button class="btn btn-color-1"onclick="location.href='./#contact'">Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My Linkedin Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/amr-ouafi-9953b22b0/'"/>
+                <img src="./assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/amiroxx12'"/>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h1 class="title">Mon Parcours</h1>
+        <div class="section-container">
+        <div class="section__pic-container">
+            <img src="./assets/picc.png" alt="Profile picture" class="about-pic"/>
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h3 class="dc__h3"> Experience <img src="./assets/experience.png" alt="Experience Icon" class="eduicon"/></h3>
+                    <h3>Réceptionniste</h3>
+                    <p></p>Hotel Mercure,Hotel Cowool (Cergy) <br/>Hotel Korner (Paris)</p>
+                </div>
+                <div class="details-container">
+                    <h3 class="dc__h3">Education<img src="./assets/edd.png" alt="Education Icon" class="eduicon"/></h3>
+                    <h3>CPGE- IbnGhazi Marrakech</h3>
+                    <p>Classes préparatoires aux grandes écoles<br />MPSI/MP</p> 
+                </div>
+                <div class="details-container">
+                    <h3 class="dc__h3">Education<img src="./assets/edd.png" alt="Education Icon" class="eduicon"/></h3>
+                    <h3>ECE Paris</h3>
+                    <p> École d'ingénieur <br>  Majeure Cybersécurité </p> 
+                </div>
+        </div>
+        <div class="text-container">
+            <p> Je suis actuellement étudiant en cybersécurité à ECE Paris, une école d'ingénieur renommée, où je me spécialise dans la majeure Cybersécurité. Passionné par les enjeux de sécurité informatique, j'ai choisi de me consacrer à ce domaine en constante évolution.
+                <br> <br>
+                Mon parcours académique comprend également une formation en classes préparatoires aux grandes écoles (CPGE) au lycée Ibn Ghazi à Marrakech. Pendant deux ans, j'ai suivi un cursus exigeant en mathématiques, physique et sciences de l'ingénieur en MPSI/MP, ce qui m'a fourni des bases solides pour aborder les défis techniques de la cybersécurité.
+                <br> <br>
+                En parallèle de mes études, j'ai acquis une précieuse expérience professionnelle en tant que réceptionniste dans l'hôtellerie. J'ai travaillé au sein d'établissements prestigieux tels que l'Hôtel Mercure, l'Hôtel Cowool à Cergy, et l'Hôtel Korner à Paris. Ces expériences m'ont permis de développer des compétences essentielles en communication, en gestion du temps, et en résolution de problèmes, des compétences transférables qui me seront précieuses dans mon futur rôle en cybersécurité.
+                <br> <br>
+                Je suis à la recherche d'une opportunité d'alternance en cybersécurité, où je pourrai mettre en pratique mes connaissances académiques tout en continuant à apprendre au sein d'une entreprise dynamique et innovante.
+            </p>
+        </div>
+        </div>
+        </div>
+     <img src="./assets/arrow.png" alt="Arrow icon" class="arrow icon" onclick="location.href='./#experience'">   
+    </section>
+    <section id="experience">
+        <h1 class="title">Mes Compétences</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Developpement</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon"/>
+                            <div>
+                                <h3>C</h3>
+                                <p>Intermédiaire</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon"/>
+                            <div>
+                                <h3>C++</h3>
+                                <p>Intermédiaire</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon"/>
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermédiaire</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon"/>
+                            <div>
+                                <h3>Java</h3>
+                                <p>Intermédiaire</p>
+                            </div>
+                        </article>
+                        
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon"/>
+                            <div>
+                                <h3>Linux</h3>
+                                <p>Intermédiaire</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon"/>
+                            <div>
+                                <h3>Nmap</h3>
+                                <p>Débutant</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon"/>
+                            <div>
+                                <h3>Metasploit</h3>
+                                <p>Débutant</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon"/>
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermédiaire</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon"/>
+                            <div>
+                                <h3>Arduino</h3>
+                                <p>Intermédiaire</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Sécurité Web</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon"/>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermédiaire</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon"/>
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermédiaire</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon"/>
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Intermédiaire</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon"/>
+                            <div>
+                                <h3>BurpSuite</h3>
+                                <p>Débutant</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon"/>
+                            <div>
+                                <h3>OWASP ZAP</h3>
+                                <p>Débutant</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon"/>
+                            <div>
+                                <h3>Splunk</h3>
+                                <p>Débutant</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience Icon" 
+                            class="icon"/>
+                            <div>
+                                <h3>Maltego</h3>
+                                <p>Débutant</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="arrow icon" onclick="location.href='./#projects'">   
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Parcourir mes</p>
+        <h1 class="title">Projets</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/projet1.png" 
+                    alt="Project 1"
+                    class="project-img" />
+                </div>
+                <h2 class="experience-sub-title project-title">Bataille Navale</h2>
+                    <p> Ce projet de jeu de bataille navale vise à recréer le célèbre jeu de société en langage C.<br> Le joueur et l'ordinateur s'affrontent dans une bataille navale où l'objectif est de couler tous les navires de l'adversaire. <br>
+
+                        Le jeu débutera par la création d'une grille de jeu, où les joueurs pourront placer leurs navires. Les navires seront représentés par des symboles sur la grille, et chaque navire aura une taille spécifique. Les joueurs devront tour à tour entrer les coordonnées où ils veulent attaquer.<br>
+                    
+                        Le jeu se poursuivra jusqu'à ce que tous les navires d'un joueur soient coulés. À ce moment-là, le jeu affichera un message de victoire pour le gagnant, et proposera de recommencer une partie ou de quitter. </p> 
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/cardiaque.jpg" 
+                    alt="Project 1"
+                    class="project-img" />
+                </div>
+                <h2 class="experience-sub-title project-title">Mesure de battement cœur </h2>
+                    <p> Ce projet a pour objectif de créer un dispositif de mesure de battements de cœur à l'aide d'une carte Arduino.
+                        <br><br>
+                        Le dispositif utilisera un capteur de fréquence cardiaque, tel que le capteur de pouls à infrarouge (photopléthysmographie), pour détecter les pulsations cardiaques. Ce capteur sera placé sur un doigt ou un lobe de l'oreille de l'utilisateur.
+                        <br><br>
+                        Une fois le capteur connecté à la carte Arduino, le programme Arduino sera chargé de mesurer la fréquence cardiaque en comptant les pulsations détectées par le capteur pendant une période donnée. Ces données seront ensuite affichées sur un écran LCD.
+                        
+                         </p> 
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/netflix.jpg" 
+                    alt="Project 2"
+                    class="project-img" />
+                </div>
+                <h2 class="experience-sub-title project-title">Netflix</h2>
+                    <p> Ce projet consiste à recréer une version simplifiée de Netflix en utilisant le langage Java. L'objectif est de développer une application console qui permettra aux utilisateurs de rechercher et de regarder des vidéos en streaming.
+                        <br><br>
+                        L'application débutera par un système d'authentification où les utilisateurs pourront se connecter avec leur nom d'utilisateur et leur mot de passe. Une fois connectés, ils auront accès à une liste de vidéos disponibles
+                    <br>
+                        <br>
+                        Pour regarder une vidéo, l'application utilisera des flux de données pour diffuser la vidéo en streaming. Les utilisateurs pourront mettre en pause, arrêter, et reprendre la lecture à tout moment. </p> 
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/immobilier.jpg" 
+                    alt="Project 2"
+                    class="project-img" />
+                </div>
+                <h2 class="experience-sub-title project-title">Site de vente immobilier</h2>
+                    <p> Ce projet consiste à créer un site web de vente immobilière en utilisant HTML, CSS et JavaScript. L'objectif est de fournir une plateforme conviviale où les utilisateurs peuvent rechercher, visualiser et acheter des biens immobiliers.
+                        <br><br>
+                        Le site comprendra une interface utilisateur intuitive avec une page d'accueil attrayante, une recherche avancée, des listes de biens immobiliers avec des détails complets, des pages de détail pour chaque propriété, un formulaire de contact, une galerie d'images, une carte interactive et des fonctionnalités supplémentaires telles que la sauvegarde des favoris et le partage sur les réseaux sociaux. </p> 
+            </div>
+        </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="arrow icon" onclick="location.href='./#contact'">   
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png"
+                 alt="Email Icon"
+                 class="icon contact-icon email-icon"/>
+                 <p><a href="mailto:ouafiamr9@gmail.com">ouafiamr9@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png"
+                 alt="Linkedin Icon"
+                 class="icon contact-icon"/>
+                 <p><a href="https://www.linkedin.com/in/amr-ouafi-9953b22b0/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Compétences</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Amr Ouafi, All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
